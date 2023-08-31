@@ -1,0 +1,97 @@
+.contenedor-general {
+    width: 80;
+    margin: auto;
+}
+
+header{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header section {
+    height: 45vh;
+    border: 1px solid;
+}
+
+header section:nth-child(1) {
+   display: grid;
+   text-align: left;
+   align-content: center;
+}
+
+header section:nth-child(1) div:nth-child(1){
+    width: 40%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header section:nth-child(1) div:nth-child(2){
+    margin-bottom: 10px;
+}
+
+header section:nth-child(1) div:nth-child(3) a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 35%;
+   
+}
+
+header section:nth-child(2) div{
+    display: grid;
+    place-items: center;
+}
+
+
+ header section:nth-child(2) img {
+    width: 60%; 
+    object-fit: cover; 
+ }
+
+  .titulo h2{
+    text-align: center;
+ }
+
+.contenedor-general main{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+ main .video{
+    width: 500px;
+    height: auto;
+}
+
+.video img {
+    max-width: 100%; /* La imagen se adapta al tamaño del contenedor */
+    height: auto; /* Ajusta la altura proporcionalmente */
+    border: 1px solid;
+}
+
+main .platos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-gap: 20px; /* Espacio entre celdas */
+}
+
+
+main .platos > div{
+    width: 200px;
+    height: auto;
+    border: 1px solid;
+}
+
+.platos img {
+    max-width: 100%; /* La imagen se adapta al tamaño del contenedor */
+    height: auto; /* Ajusta la altura proporcionalmente */
+}
